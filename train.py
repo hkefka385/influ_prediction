@@ -248,7 +248,6 @@ def _loss(loss_f):
     else:
         return nn.MSELoss()
 
-
 def _opt(opt, lr, model):
     if opt == 'Adam':
         return torch.optim.Adam(model.parameters(), lr=lr)
